@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { UserComponent } from './user/user.component';
-import { GameComponent } from "./games/games.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserComponent, GameComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styles: ``
-}) 
+  styleUrl: './app.component.css'
+})
 export class AppComponent {
-  city= 'Culiacan';
+  title = '02-SegundoEjemplo';
 }
